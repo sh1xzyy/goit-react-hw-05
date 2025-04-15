@@ -1,0 +1,13 @@
+.header {
+	background-color: #f0f0f0;
+	box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.5);
+}
+.nav {
+	display: flex;
+	justify-content: flex-start;
+	column-gap: 15px;
+	padding: 20px 0;
+	font-weight: 500;
+	font-size: 18px;
+	color: #292929;
+}
