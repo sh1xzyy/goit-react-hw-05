@@ -1,0 +1,22 @@
+.movieItem {
+	width: calc((100% - 3 * 24px) / 4);
+	transition: transform 250ms linear;
+	&:hover {
+		transform: scale(1.02);
+	}
+}
+.movieInfo {
+	padding: 15px;
+	border: 1px solid #cccccc;
+	border-top: none;
+	p {
+		display: flex;
+		align-items: center;
+		column-gap: 5px;
+	}
+	h3 {
+		margin-top: 7px;
+		font-weight: 500;
+		font-size: 18px;
+	}
+}

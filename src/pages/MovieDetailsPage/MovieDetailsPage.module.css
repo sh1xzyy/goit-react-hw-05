@@ -1,0 +1,76 @@
+.goBackLink {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+	padding: 10px;
+	border: 1px solid #292929;
+	border-radius: 7px;
+	background-color: #f0f0f0;
+	margin-bottom: 20px;
+	transition: background-color 250ms linear;
+	&:hover {
+		background-color: #e99b98;
+	}
+}
+
+.movieInfo {
+	display: flex;
+	column-gap: 20px;
+	border: 1px solid #c0c0c0;
+	border-radius: 7px;
+	padding: 15px;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	row-gap: 10px;
+	flex: 1;
+
+	.movieStats {
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		p {
+			display: flex;
+			column-gap: 7px;
+			font-weight: 500;
+		}
+	}
+	.movieDetails {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+		p {
+			font-weight: 500;
+			font-size: 16px;
+			span {
+				font-weight: 600;
+				font-size: 18px;
+			}
+		}
+
+		h3 {
+			font-weight: 600;
+			font-size: 32px;
+		}
+	}
+}
+
+.additionalLinks {
+	display: flex;
+	column-gap: 15px;
+	margin-bottom: 40px;
+	.link {
+		font-weight: 500;
+		font-size: 18px;
+		color: #292929;
+		transition: color 250ms linear;
+	}
+
+	.active {
+		color: red;
+	}
+}

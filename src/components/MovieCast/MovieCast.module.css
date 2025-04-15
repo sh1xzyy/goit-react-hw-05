@@ -1,0 +1,26 @@
+.castList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	li {
+		width: calc((100% - 3 * 20px) / 4);
+		.castInfo {
+			display: flex;
+			flex-direction: column;
+			row-gap: 5px;
+			border: 1px solid #d6d6d6;
+			padding: 10px;
+		}
+		h3 {
+			font-weight: 500;
+			font-size: 18px;
+		}
+		p {
+			font-weight: 400;
+			span {
+				font-weight: 500;
+				font-size: 16px;
+			}
+		}
+	}
+}
