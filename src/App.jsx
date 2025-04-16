@@ -12,7 +12,7 @@ const MovieDetailsPage = lazy(() =>
 	import('./pages/MovieDetailsPage/MovieDetailsPage')
 )
 const MoviesPage = lazy(() => import('./pages/MoviesPage/MoviesPage'))
-const HomePage = lazy(() => import('./pages/HomePage/Homepage'))
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'))
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage/NotFoundPage'))
 
 function App() {
