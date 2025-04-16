@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
+import { getMoviesByTrending } from '../../services/api'
 import MoviesList from '../../components/MovieList/MovieList'
 import Section from '../../components/Section/Section'
-import { getMoviesByTrending } from '../../services/api'
 import ErrorPage from '../ErrorPage/ErrorPage'
 
 const HomePage = () => {

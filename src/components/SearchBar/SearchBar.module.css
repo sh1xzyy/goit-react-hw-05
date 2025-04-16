@@ -1,0 +1,42 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+	div {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 7px;
+	}
+	.field {
+		display: block;
+		width: 30%;
+		height: 40px;
+		font-weight: 500;
+		font-size: 18px;
+		padding-left: 15px;
+		border: 1px solid #c7c7c7;
+		border-radius: 8px 0 0 8px;
+		outline: transparent;
+		transition: outline 250ms linear;
+		&:focus {
+			outline: 1px solid #298b92;
+		}
+	}
+	button {
+		font-weight: 500;
+		border: 1px solid #c7c7c7;
+		border-radius: 0 8px 8px 0;
+		color: #292929;
+		background-color: #f0f0f0;
+		transition: background-color 250ms linear, color 250ms linear;
+		&:hover {
+			background-color: #dddddd;
+		}
+	}
+	.errorMsg {
+		color: red;
+	}
+}

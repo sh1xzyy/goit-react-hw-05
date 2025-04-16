@@ -58,19 +58,3 @@
 		}
 	}
 }
-
-.additionalLinks {
-	display: flex;
-	column-gap: 15px;
-	margin-bottom: 40px;
-	.link {
-		font-weight: 500;
-		font-size: 18px;
-		color: #292929;
-		transition: color 250ms linear;
-	}
-
-	.active {
-		color: red;
-	}
-}

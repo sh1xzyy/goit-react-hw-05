@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { getMovieReviewsById } from '../../services/api'
 import { useParams } from 'react-router-dom'
-import s from './MovieReviews.module.css'
 import parse from 'html-react-parser'
+import s from './MovieReviews.module.css'
 
 const MovieReviews = () => {
 	const { id } = useParams()
@@ -15,7 +15,6 @@ const MovieReviews = () => {
 				const response = await getMovieReviewsById(id)
 				setReviews(response.results)
 				setIsEmpty(!response.results.length)
-				console.log(response.results)
 			} catch (error) {
 				console.log(error)
 			}
@@ -30,7 +29,7 @@ const MovieReviews = () => {
 					{reviews.map(({ id, author, content }) => {
 						return (
 							<li key={id}>
-								<h3>{author}</h3>
+								<h3>Author: {author}</h3>
 								{parse(content)}
 							</li>
 						)

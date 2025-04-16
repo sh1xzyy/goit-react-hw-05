@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { getMovieCreditsById } from '../../services/api'
 import { useParams } from 'react-router-dom'
+import { getMovieCreditsById } from '../../services/api'
 import s from './MovieCast.module.css'
 
 const MovieCast = () => {
@@ -12,7 +12,7 @@ const MovieCast = () => {
 		const getMovies = async () => {
 			const response = await getMovieCreditsById(id)
 			setCast(response.cast)
-			setIsEmpty(!response.cast)
+			setIsEmpty(!response.cast.length)
 		}
 		getMovies()
 	}, [id])
@@ -26,7 +26,11 @@ const MovieCast = () => {
 							return (
 								<li key={id}>
 									<img
-										src={`https://image.tmdb.org/t/p/w500/${profile_path}`}
+										src={
+											profile_path
+												? `https://image.tmdb.org/t/p/w500/${profile_path}`
+												: '/No_Image_Available.jpg'
+										}
 										alt={character}
 									/>
 									<div className={s.castInfo}>

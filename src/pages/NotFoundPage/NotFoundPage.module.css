@@ -1,0 +1,23 @@
+.notFoundPageWrapper {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	p {
+		font-weight: 600;
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+	.notFoundLink {
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+		border-radius: 8px;
+		color: #292929;
+		background-color: #d3d3d3;
+		transition: background-color 250ms linear;
+		&:hover {
+			background-color: #afafaf;
+		}
+	}
+}
