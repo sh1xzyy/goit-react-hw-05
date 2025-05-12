@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-const API_KEY =
-	'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZTc2NGVlZmU5YzE5ZTRmYWNlYzI5NzQ1NjJmOGZmNCIsIm5iZiI6MTc0NDcxNzI4NS44NTc5OTk4LCJzdWIiOiI2N2ZlNDVlNWVmNWFlNjg3Y2JkOTVmZWMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.TPfU-UDtJeQ8hmsAJNyhUO4sMkX5WZYn5_-eYMTr8rM'
+const API_KEY = import.meta.env.VITE_API_KEY
 
 const options = {
 	headers: { Authorization: `Bearer ${API_KEY}` },
